@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Royal design</title>
+	<link rel="stylesheet" href="font-awesome.min.css">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			outline: 0;
+		}
+		
+		.right {
+			float: right;
+		}
+		
+		.left {
+			float: left;
+		}
+		
+		.clearfix {
+			clear: both;
+		}
+		
+		clear {
+			overflow: hidden;
+		}
+		
+		.header_section {
+			background-image: url(http://s3.postimg.org/ebpteawc3/header.jpg);
+			min-height: 400px;
+			width: 100%;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+		
+		.header_bar_top {
+			min-height: 40px;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+		
+		.social_icon {
+			width: 35%;
+			float: left;
+		}
+		
+		.social_icon a {}
+		
+		.social_icon a i {
+			margin: 10px;
+			color: white;
+		}
+		
+		.social_icon p {
+			float: left;
+			color: white;
+			margin: 8px;
+		}
+		
+		.fa.fa-facebook {}
+		
+		.fa.fa-twitter {}
+		
+		.fa.fa-linkedin {}
+		
+		.header_search {
+			width: 45%;
+			height: 40px;
+			margin: 0px;
+			float: right;
+		}
+		
+		.input_box {
+			width: 200px;
+			height: 30px;
+			margin: 4px;
+			position: relative;
+			background-color: #114355;
+			border: 0;
+			color: #fff;
+			outline: none;
+			margin-left: 265px;
+		}
+		
+		.sbutton {
+			width: 33px;
+			height: 29px;
+			margin: 4.3px;
+			float: left;
+			border: 0px;
+			position: absolute;
+			background-color: #1D5F77;
+			border-radius: 5px;
+			right: 149px;
+			outline: none;
+		}
+		
+		.sbutton:hover {
+			background-color: #339DAB;
+		}
+		
+		.header_buttom {
+			height: 80px;
+			width: 100%;
+		}
+		
+		.header_buttom_wrapper {
+			min-height: 80px;
+			width: 100%;
+		}
+		
+		.main_header {}
+		
+		.main_header_top {
+			min-height: 100px;
+		}
+		
+		.logo {
+			width: 25%;
+			margin-top: 25px;
+			margin-left: 5px;
+		}
+		
+		.logo h1 {
+			color: white;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		
+		.logo p {
+			color: white;
+			font-size: 12px;
+		}
+		
+		.menu_bar {
+			width: 100%;
+		}
+		
+		.main_manu_wrapper {
+			min-height: 50px;
+			width: 65%;
+			float: right;
+			margin-top: 25px;
+		}
+		
+		.menu_bar ul {
+			min-height: 50px;
+		}
+		
+		.menu_bar ul li {
+			list-style: none;
+			float: left;
+		}
+		
+		.menu_bar ul li a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+			padding: 10px 18px;
+			margin-right: 20px;
+			border-radius: 7px;
+		}
+		
+		.menu_bar ul li a:hover {
+			background-color: #20D3FE;
+			color: black;
+			transform: scale(1.1);
+			transition: 1s;
+		}
+		
+		.intro_text {
+			color: white;
+			width: 60%;
+			font-size: 20px;
+		}
+		
+		.text {
+			margin-top: 30px;
+		}
+		
+		.text_buton {
+			background-color: #fff;
+			min-height: 30px;
+			border: none;
+			padding: 10px 40px;
+			color: #1D5E72;
+			font-weight: bold;
+			font-size: 20px;
+			border-radius: 5px;
+			box-shadow: 10px 10px 5px 0px;
+		}
+		
+		.button right a {
+			transition: 1s;
+			transform: scale(1.1);
+		}
+		
+		.text_buton:hover {
+			transform: scale(1.1);
+			transition: 1s;
+		}
+		
+		.slider_section {
+			height: 360px;
+			margin-left: 30px;
+			margin-top: 72px;
+			position: absolute;
+			box-shadow: 05px 5px 10px 0px;
+		}
+		
+		.slyder_wrapper {}
+		
+		.clr {}
+		
+		.cointain_section {
+			position: relative;
+		}
+		
+		.wellcome {
+			margin-top: 250px;
+		}
+		
+		.welcome_contain {
+			box-shadow: 3px 3px 5px 0;
+			min-height: 150px;
+		}
+		
+		.welcome_contain h3 {
+			color: #333;
+			margin-bottom: 20px;
+		}
+		
+		.welcome_contain img {
+			min-height: 50px;
+			width: 50px;
+			float: left;
+			margin-right: 10px;
+		}
+		
+		.welcome_contain p {}
+		
+		.our_services {}
+		
+		.services {
+			float: left;
+			margin-left: 10px;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		
+		.services h3 {
+			color: #333;
+		}
+		
+		.services img {
+			margin-bottom: 20px;
+		}
+		
+		.img1 {
+			width: 350px;
+			height: 150px;
+			margin-bottom: 20px;
+		}
+		
+		.services p {
+			width: 300px;
+			padding: 5px;
+		}
+		
+		.h3p {
+			color: #1e379f;
+			margin-bottom: 20px;
+			padding-left: 5px;
+		}
+		
+		.readmore {
+			color: black;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		
+		.footer_section {
+			min-height: 70px;
+			background-color: #134455;
+			width: 100%;
+		}
+		
+		.foter_wrapper {
+			min-height: 80px;
+			width: 100%;
+		}
+		
+		.footer_logo {
+			width: 50%;
+			float: left;
+		}
+		
+		.footer_logo h2 {
+			color: white;
+			width: 50%;
+			padding-top: 7px;
+			float: left;
+		}
+		
+		.footer_logo p {
+			color: white;
+			width: 40%;
+		}
+		
+		.copy_right {
+			font-weight: bold;
+			color: white;
+			float: right;
+			padding: 20px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="header_section">
+		<div class="container">
+			<div class="header_bar_top">
+				<div class="social_icon left clearfix">
+					<p>Lorem ipsum dolor sit amet.</p>
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="header_search">
+					<form>
+						<input type="text" class="input_box" placeholder="   Search....">
+						<button type="submit" class="sbutton">
+ 						<i class="fa fa-search"></i>
+ 					</button>
+					</form>
+				</div>
+			</div>
+			<!--			header_bar_top-->
+			<div class="header_buttom">
+				<div class="header_buttom_wrapper">
+					<div class="main_header">
+						<div class="main_header_top clearfix">
+							<div class="logo left clearfix">
+								<h1>Royel design</h1>
+								<p>Lorem ipsum dolor sit amet</p>
+							</div>
+							<div class="main_manu_wrapper">
+								<div class="menu_bar right clearfix">
+									<ul>
+										<li><a href="#">Home</a></li>
+										<li><a href="#">Grapich Design</a></li>
+										<li><a href="#">Web Design</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contuct Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--		menu_bar-->
+					<div class="text">
+						<div class="intro_text left clearfix">
+							<p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Sint voluptas quibusdam perspiciatis, ipsa ducimus ut, adipisci! Molestias, ullam quaerat eos!</p>
+						</div>
+						<div class="button right">
+							<a href=""><button class="text_buton">Click hear to go</button></a>
+						</div>
+					</div>
+					<div class="slider_section clearfix">
+
+						<div id="slider">
+							<a href="#"><img src="http://s3.postimg.org/k4zvev7zn/image.jpg" alt="nature 4" /></a>
+						</div>
+					</div>
+					<!--		slyder_section-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--		header_section-->
+	<div class="cointain_section">
+		<div class="container">
+			<div class="wellcome">
+				<div class="welcome_contain">
+					<h3>Welcome to Our Website</h3>
+					<img src="http://s3.postimg.org/sebqta1pv/welcome.jpg" alt="img missing">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel saepe, dolores atque nisi! Repellat modi ducimus quisquam a itaque dolorum consectetur eum minus corrupti ad aut, quidem non, autem accusamus reprehenderit, impedit fuga! Modi, doloribus voluptatem soluta cumque amet dolore reiciendis enim debitis. Iusto ratione dolor quaerat veniam nemo.</p>
+				</div><br>
+				<div class="welcome_contain">
+					<h3>Welcome to Our Website</h3>
+					<img src="http://s3.postimg.org/z3ia9an1v/w3us_icon.jpg" alt="img missing">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vel saepe, dolores atque nisi! Repellat modi ducimus quisquam a itaque dolorum consectetur eum minus corrupti ad aut, quidem non, autem accusamus reprehenderit, impedit fuga! Modi, doloribus voluptatem soluta cumque amet dolore reiciendis enim debitis. Iusto ratione dolor quaerat veniam nemo.</p>
+				</div>
+			</div>
+
+			<!--	welcome_contain-->
+			<div class="our_services">
+				<div class="services">
+					<h3>Web devolopment</h3>
+					<p class="h3p">Lorem ipsum dolor sit amet</p>
+					<img src="http://s3.postimg.org/hm9l0fwvn/web.png" alt="img missing">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime necessitatibus nisi laborum dolore autem, molestiae quam sapiente architecto mollitia est id, deserunt suscipit vitae quisquam.</p>
+					<a href="" class="readmore">Read More...</a>
+				</div>
+				<div class="services">
+					<h3>Project management</h3>
+					<p class="h3p">Lorem ipsum dolor sit amet</p>
+					<img class="img1" src="http://s3.postimg.org/kmv0upxkj/pro.jpg" alt="img missing">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi provident perspiciatis autem minus distinctio, consequuntur et obcaecati tempora optio, id dolore quae voluptas rem odio?</p>
+					<a href="" class="readmore">Read More...</a>
+				</div>
+				<div class="services">
+					<h3>Quicly support</h3>
+					<p class="h3p">Lorem ipsum dolor sit amet</p>
+					<img src="http://s3.postimg.org/dfoql3x9v/image.jpg" alt="img missing">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ad eveniet, voluptas excepturi adipisci! Voluptates accusantium nobis velit corrupti quo, eaque, neque accusamus aliquid fugit sed tempora quisquam iste provident?</p>
+					<a href="" class="readmore"><b>Read More...</b></a>
+				</div>
+			</div>
+			<!--	our_services-->
+		</div>
+	</div>
+	<!--	 cointain_section-->
+	<div class="footer_section clearfix">
+		<div class="container">
+			<div class="footer_wrapper">
+				<div class="footer_logo">
+					<h2>Royel design</h2>
+					<p>Lorem ipsum dolor sit amet</p>
+				</div>
+				<div class="copy_right">
+					<p>&copy;Copyright mnh.saki</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
